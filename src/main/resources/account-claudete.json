@@ -1,0 +1,20 @@
+//api/account/
+{
+  "username": "claudete",
+  "email": "claudete@cremesc.org.br",
+  "displayName": "Claudete Iracema Alves",
+  "roles": [
+    {
+      "displayName": "Processo Ético Profissional",
+      "name": "Processo Ético Profissional",
+      "id": "pep"
+    }
+  ],
+  "credentials": {
+    "password": {
+      "active": true,
+      "value": "12345678",
+      "createdDate": "2018-04-29T20:22:01Z"
+    }
+  }
+}
