@@ -26,16 +26,16 @@ public class SiemUser {
     private String cpf;
     private String setor;
     private String password;
-    private String estato;
+    private String estado;
 
     public SiemUser() {
     }
 
-    public SiemUser(String cpf, String setor, String password, String estato) {
+    public SiemUser(String cpf, String setor, String password, String estado) {
         this.cpf = cpf;
         this.setor = setor;
         this.password = new String(Cipher.INSTANCE.getPasswordCipher().encrypt(password));
-        this.estato = estato;
+        this.estado = estado;
     }
 
     public String getCpf() {
@@ -50,8 +50,8 @@ public class SiemUser {
         return password;
     }
 
-    public String getEstato() {
-        return estato;
+    public String getEstado() {
+        return estado;
     }
 }
 

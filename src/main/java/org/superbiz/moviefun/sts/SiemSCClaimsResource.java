@@ -30,11 +30,11 @@ public class SiemSCClaimsResource {
     private static HashMap<String, SiemUser> data = new HashMap<>();
 
     static {
-        data.put("nilzia", new SiemUser("076.289.788-86", "Fiscalização", "12345678", "SC"));
-        data.put("zuleica", new SiemUser("071.265.324-31", "Pessoa Física", "12345678", "SC"));
-        data.put("claudia", new SiemUser("082.389.912-71", "Pessoa Jurídica", "12345678", "SC"));
+        data.put("lorena", new SiemUser("076.289.788-86", "Fiscalizacao", "12345678", "SC"));
+        data.put("fernanda", new SiemUser("076.289.788-86", "Pessoa Fisica", "12345678", "SC"));
+        data.put("leila", new SiemUser("082.389.912-71", "Pessoa Jurídica", "12345678", "SC"));
         data.put("claudete", new SiemUser("082.389.912-71", "Processo Ético Profissional", "12345678", "SC"));
-        data.put("rsv.guima", new SiemUser("099.212.789-12", "Informática", "12345678", "SC"));
+        data.put("rsv.guima", new SiemUser("099.212.789-12", "Terceirizado", "12345678", "SC"));
     }
 
     @POST
