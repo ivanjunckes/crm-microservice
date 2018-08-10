@@ -1,0 +1,66 @@
+//api/http/
+{
+  "endpoint": "http://74.208.183.39:4444",
+  "configuration": {
+    "signature": [
+
+    ],
+    "name": "CRM-PR-API",
+    "header": [
+
+    ],
+    "id": "crm-pr-api",
+    "oauth2": [
+
+    ],
+    "basic": [
+
+    ]
+  },
+  "isLoadBalancing": false,
+  "name": "CRM-PR-API",
+  "pool": {
+    "maxThreadsCount": 256,
+    "maxRequestRetry": 3,
+    "enabledProtocols": [
+      "ALL"
+    ],
+    "sslSessionCacheSize": 0,
+    "handshakeTimeout": "10 seconds",
+    "acceptAnyCertificate": false,
+    "enabledCipherSuites": [
+      "ALL"
+    ],
+    "sslSessionCacheTimeout": "1 minute",
+    "readTimeout": "5 seconds",
+    "followRedirect": false,
+    "name": "CRM-PR-API",
+    "connectTimeout": "5 seconds",
+    "strict302Handling": false,
+    "id": "crm-pr-api",
+    "maxConnectionsPerHost": 200,
+    "compressionEnforced": false,
+    "requestTimeout": "12 hours",
+    "idleConnectionInPoolTimeout": "1 minute",
+    "maxConnections": 200,
+    "maxRedirects": 5
+  },
+  "description": "Conselho Regional de Medicina - PR",
+  "id": "crm-pr-api",
+  "hostGroup": {
+    "maxTries": 5,
+    "hosts": [
+      {
+        "endpoint": "http://74.208.183.39:4444",
+        "lastSeen": "1969-12-31T23:59:59Z",
+        "active": true,
+        "weight": 1,
+        "health": -1
+      }
+    ],
+    "strategy": "ROUND_ROBIN"
+  },
+  "tags": [
+
+  ]
+}

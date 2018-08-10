@@ -1,0 +1,20 @@
+//api/account/
+{
+  "username": "carlos",
+  "email": "carlos@cremepr.org.br",
+  "displayName": "Carlos Ademar",
+  "roles": [
+    {
+      "displayName": "Processo Ético Profissional",
+      "name": "processo-etico-profissional",
+      "id": "pep"
+    }
+  ],
+  "credentials": {
+    "password": {
+      "active": true,
+      "value": "12345678",
+      "createdDate": "2018-04-29T20:22:01Z"
+    }
+  }
+}

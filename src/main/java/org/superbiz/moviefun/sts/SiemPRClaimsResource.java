@@ -24,17 +24,13 @@ import javax.ws.rs.core.MediaType;
 import java.util.HashMap;
 import java.util.Map;
 
-@Path("claims")
-public class SiemClaimsResource {
+@Path("siem/pr/claims")
+public class SiemPRClaimsResource {
 
     private static HashMap<String, SiemUser> data = new HashMap<>();
 
     static {
-        data.put("nilzia", new SiemUser("076.289.788-86", "Fiscalização", "12345678"));
-        data.put("zuleica", new SiemUser("071.265.324-31", "Pessoa Física", "12345678"));
-        data.put("claudia", new SiemUser("082.389.912-71", "Pessoa Jurídica", "12345678"));
-        data.put("claudete", new SiemUser("082.389.912-71", "Processo Ético Profissional", "12345678"));
-        data.put("rsv.guima", new SiemUser("099.212.789-12", "Informática", "87654321"));
+        data.put("carlos", new SiemUser("087.567.111-86", "Fiscalização", "12345678", "PR"));
     }
 
     @POST

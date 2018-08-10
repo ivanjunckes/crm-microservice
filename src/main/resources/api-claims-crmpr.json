@@ -1,0 +1,23 @@
+//api/claim/source
+{
+  "configuration": {
+    "path": "/crm-microservice/rest/siem/sc/claims"
+  },
+  "displayName": "CRM-PR-CLAIMS",
+  "name": "CRM-PR-CLAIMS",
+  "description": "Conselho Regional de Medicina - PR API Claims Source",
+  "id": "crm-pr-claims",
+  "type": "HTTP",
+  "connectionRef": {
+    "displayName": "CRM-PR-API",
+    "name": "CRM-PR-API",
+    "description": "Conselho Regional de Medicina - PR",
+    "attributes": {
+      "targetHost": "http://74.208.183.39:4444"
+    },
+    "id": "crm-pr-api"
+  },
+  "tags": [
+
+  ]
+}

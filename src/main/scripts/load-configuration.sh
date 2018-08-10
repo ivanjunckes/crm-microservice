@@ -5,32 +5,24 @@ cd "$(dirname "$0")"
 source ./import.sh
 
 
-HOST="localhost"
+HOST="74.208.214.72"
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    HOST="host.docker.internal"
-fi
+# API Connection
+import http://${HOST}:8080/tag ../resources/api-connection-crmpr.json
+
+#API Claims Source
+import http://${HOST}:8080/tag ../resources/api-claims-crmpr.json
+
+# OAuth2 profile
+import http://${HOST}:8080/tag ../resources/oauth2-profile-crmpr.json
 
 # set the default key size for public/private keys to 2048
-import http://localhost:8080/tag ../resources/default-keysize-2048.json
-
-# create the Movies oauth2 profile
-import http://localhost:8080/tag ../resources/profile-oauth2-movies.json
-
-# set the newly created oauth2 profile as the default profile
-import http://localhost:8080/tag ../resources/default-oauth2-profile.json
+import http://${HOST}:8080/tag ../resources/default-keysize-2048.json
 
 # load 4 accounts with their respective set of roles
-import http://localhost:8080/tag ../resources/account-alex.json
-import http://localhost:8080/tag ../resources/account-john.json
-import http://localhost:8080/tag ../resources/account-mark.json
-import http://localhost:8080/tag ../resources/account-nick.json
+import http://${HOST}:8080/tag ../resources/account-carlos.json
+import http://${HOST}:8080/tag ../resources/account-claudete.json
+import http://${HOST}:8080/tag ../resources/account-fernanda.json
+import http://${HOST}:8080/tag ../resources/account-leila.json
+import http://${HOST}:8080/tag ../resources/account-rafael.json
 
-# create an API connection
-DOCKER_HOST=${HOST} import http://localhost:8080/tag ../resources/api-movies.json
-
-# create an API claim source using the previously created API connection
-DOCKER_HOST=${HOST} import http://localhost:8080/tag ../resources/api-claims-movies.json
-
-# create the route
-DOCKER_HOST=${HOST} import http://localhost:8080/tag ../resources/route-movies.json
