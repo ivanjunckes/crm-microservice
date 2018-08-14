@@ -24,6 +24,7 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
@@ -36,6 +37,14 @@ public class LoadDataResource {
 
     @PostConstruct
     public void load() {
+        List<PessoaJuridica> pjs = pessoaJuridicaBean.getPessoasJuridicas(null, null, null, null);
+
+        if(pjs != null && pjs.size() > 0){
+            pjs.forEach(p -> {
+                pessoaJuridicaBean.deletePessoaJuridica(p.getId());
+            });
+        }
+
         final Faker faker = new Faker(Locale.ENGLISH);
         final Random random = new Random(System.nanoTime());
 

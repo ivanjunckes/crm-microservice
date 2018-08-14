@@ -41,6 +41,7 @@ public class SiemSCClaimsResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public SiemUser authenticate(final Map<String, String> payload) {
+        
         String username = payload.get("username");
         SiemUser user = data.get(username);
         return user;

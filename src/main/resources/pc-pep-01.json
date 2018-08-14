@@ -1,0 +1,35 @@
+//api/account/
+{
+  "credentials": {
+    "secretKeys": [
+    ],
+    "publicPrivateKeys": [
+    ],
+    "clientSecret": {
+      "active": true,
+      "value": "12345678",
+      "createdDate": "2018-08-13T17:31:42Z",
+      "oAuth2ProfileRef": "conselho-regional-de-medicina---sc"
+    }
+  },
+  "displayName": "Pep 01",
+  "roles": [
+  ],
+  "description": "Pep 01",
+  "groups": [
+  ],
+  "type": "CLIENT",
+  "tags": [
+  ],
+  "createdDate": "2018-08-13T17:28:43Z",
+  "sourceType": "ACCOUNT",
+  "id": "pc-pep-01",
+  "sourceRef": {
+    "displayName": "Gateway Accounts",
+    "name": "Gateway Accounts",
+    "description": "This is the name identifying the account source using TAG accounts data to authenticate and authorize the users.",
+    "id": "gateway-accounts"
+  },
+  "email": "pep@cremesc.org.br",
+  "username": "pc-pep-01"
+}

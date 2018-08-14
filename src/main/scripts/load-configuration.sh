@@ -7,12 +7,6 @@ source ./import.sh
 
 HOST="74.208.214.72"
 
-# API Connection
-import http://${HOST}:8080/tag ../resources/api-connection-crmpr.json
-
-#API Claims Source
-import http://${HOST}:8080/tag ../resources/api-claims-crmpr.json
-
 # OAuth2 profile
 import http://${HOST}:8080/tag ../resources/oauth2-profile-crmpr.json
 
@@ -25,4 +19,6 @@ import http://${HOST}:8080/tag ../resources/account-claudete.json
 import http://${HOST}:8080/tag ../resources/account-fernanda.json
 import http://${HOST}:8080/tag ../resources/account-leila.json
 import http://${HOST}:8080/tag ../resources/account-rafael.json
+import http://${HOST}:8080/tag ../resources/pc-pep-01.json
+import http://${HOST}:8080/tag ../resources/pc-pj-01.json
 
